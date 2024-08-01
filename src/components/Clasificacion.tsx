@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Text, View, Button, TouchableOpacity } from 'react-native';
+import { Text, View, Button, TouchableOpacity, StyleSheet } from 'react-native';
 
 interface NumberState {
   NumerosOriginales: number[];
@@ -39,19 +39,32 @@ export const Clasificacion = () => {
   }, []);
 
   return (
-    <View style={{marginTop: 50}}>
+    <View style={style.container}>
       <Text>
         BIENVENIDO
         <Text>{'\n'}Linea de Numeros: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14</Text>
         &nbsp;
         <Text>{'\n'}</Text>
       </Text>
-      <Button title="Separar" onPress={separateNumbers} />
       <Text>{'\n'}</Text>
-      <TouchableOpacity>
-        <Text>Números pares: {numbers.NumerosPares.join(', ')}</Text>
-        <Text>Números impares: {numbers.NumerosImpares.join(', ')}</Text>
+      <TouchableOpacity onPress={separateNumbers} style={style.Button}>
+        <Text>Separar Numeros</Text>
       </TouchableOpacity>
+      <Text>Números pares: {numbers.NumerosPares.join(', ')}</Text>
+        <Text>Números impares: {numbers.NumerosImpares.join(', ')}</Text>
     </View>
   );
 };
+
+const style = StyleSheet.create({
+  container: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 50,
+  },
+  Button:{
+    backgroundColor: 'lightblue',
+    padding: 10,
+    borderRadius: 5,
+  }
+});
