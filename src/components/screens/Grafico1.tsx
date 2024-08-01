@@ -24,34 +24,34 @@ const styles = StyleSheet.create({
     },
     boxPurple:{
         backgroundColor: 'aquamarine',
-        width: 500,
-        height: 290,
+        width: 100,
+        height: 100,
         borderWidth: 10,
         borderColor: 'white',
         position: 'absolute',
         //bottom: 10
-        top: 500,
-        left: 0
+        top: 0,
+        right: 0
     },
     boxOrange:{
         backgroundColor: 'orange',
-        width: 500,
-        height: 300,
+        width: 100,
+        height: 100,
         borderWidth: 10,
         borderColor: 'white',
         //top:130
         position: 'absolute',
-        left: 0,
-        top:10
+        right: 0,
+        bottom:0
     },
     boxGreen:{
         backgroundColor: 'green',
-        width: 500,
-        height: 200,
+        width: 100,
+        height: 600,
         borderWidth: 10,
         borderColor: 'white',
         position: 'absolute',
-        top: 300,
-        left: 0
+        top: 100,
+        right: 0
     }
 });

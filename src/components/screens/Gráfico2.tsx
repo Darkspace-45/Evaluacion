@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
 
-export const Gráfico1 = () => {
+export const Gráfico2 = () => {
   return (
     <View style={styles.container}>
       <View style={styles.boxPurple}></View>
@@ -24,34 +24,34 @@ const styles = StyleSheet.create({
     },
     boxPurple:{
         backgroundColor: 'aquamarine',
-        width: 500,
-        height: 290,
+        width: 100,
+        height: 100,
         borderWidth: 10,
         borderColor: 'white',
         position: 'absolute',
         //bottom: 10
-        top: 500,
+        top: 200,
         left: 0
     },
     boxOrange:{
         backgroundColor: 'orange',
-        width: 500,
-        height: 300,
+        width: 100,
+        height: 100,
         borderWidth: 10,
         borderColor: 'white',
         //top:130
         position: 'absolute',
         left: 0,
-        top:10
+        top: 300
     },
     boxGreen:{
         backgroundColor: 'green',
-        width: 500,
-        height: 200,
+        width: 450,
+        height: 100,
         borderWidth: 10,
         borderColor: 'white',
         position: 'absolute',
-        top: 300,
+        top: 400,
         left: 0
     }
 });
