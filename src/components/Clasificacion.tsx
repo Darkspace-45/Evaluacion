@@ -41,15 +41,16 @@ export const Clasificacion = () => {
   return (
     <View style={style.container}>
       <Text>
-        BIENVENIDO
+        <Text style={style.title}>BIENVENIDO</Text>
         <Text>{'\n'}Linea de Numeros: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14</Text>
         &nbsp;
         <Text>{'\n'}</Text>
       </Text>
       <Text>{'\n'}</Text>
       <TouchableOpacity onPress={separateNumbers} style={style.Button}>
-        <Text>Separar Numeros</Text>
+        <Text>Separar Números</Text>
       </TouchableOpacity>
+      <Text>{'\n'}</Text>
       <Text>Números pares: {numbers.NumerosPares.join(', ')}</Text>
         <Text>Números impares: {numbers.NumerosImpares.join(', ')}</Text>
     </View>
@@ -66,5 +67,10 @@ const style = StyleSheet.create({
     backgroundColor: 'lightblue',
     padding: 10,
     borderRadius: 5,
+  },
+  title:{
+    alignSelf: 'center',
+    fontSize: 20,
+    marginBottom: 20,
   }
 });
